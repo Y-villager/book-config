@@ -1,0 +1,11 @@
+server:
+  port: 8888 # Config Server的端口
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Y-villager/book-config.git # 配置文件的Git仓库地址
+          clone-on-start: true # 启动时克隆配置仓库
+          default-label: main # 默认的Git分支
